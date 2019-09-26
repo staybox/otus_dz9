@@ -56,3 +56,5 @@
 3. Файл ansible.cfg должен лежать с vagrantfile в одной директории.
 
 Также можно удалять установленную программу nginx ```ansible -m yum -a "name=nginx state=absent" -b```.
+
+Для запуска выполнить ```vagrant up```
