@@ -51,6 +51,8 @@
 
 1. С помощью команды ```ansible-galaxy init roles/nginx``` создаем роль. Эта команда создаст нам структуру папок и файлов для работы.
 
-2. Запуск производиться следующим образом ```ansible-playbook playbook/web.yml```. После запуска этого файла, вызывается файл ```/roles/nginx/tasks/mail.yml```.
+2. Запуск производиться следующим образом ```ansible-playbook playbook/web.yml```. После запуска этого файла, вызывается файл ```/roles/nginx/tasks/main.yml```.
 
 3. Файл ansible.cfg должен лежать с vagrantfile в одной директории.
+
+Также можно удалять установленную программу nginx ```ansible -m yum -a "name=nginx state=absent" -b```.
